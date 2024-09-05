@@ -32,15 +32,42 @@
         </section>
         <section class="highlights">
             <h2>Produtos em Destaque</h2>
-            <!-- Produtos em Destaque -->
+            <div class="product-item">
+                <img src="peca-destaque1.jpg" alt="Peça em Destaque 1">
+                <h3>Peça em Destaque 1</h3>
+                <p>R$ 200,00</p>
+            </div>
+            <div class="product-item">
+                <img src="peca-destaque2.jpg" alt="Peça em Destaque 2">
+                <h3>Peça em Destaque 2</h3>
+                <p>R$ 150,00</p>
+            </div>
         </section>
         <section class="news">
             <h2>Novidades</h2>
-            <!-- Novos Produtos -->
+            <div class="product-item">
+                <img src="nova-peca1.jpg" alt="Nova Peça 1">
+                <h3>Nova Peça 1</h3>
+                <p>R$ 180,00</p>
+            </div>
+            <div class="product-item">
+                <img src="nova-peca2.jpg" alt="Nova Peça 2">
+                <h3>Nova Peça 2</h3>
+                <p>R$ 220,00</p>
+            </div>
         </section>
         <section class="offers">
             <h2>Ofertas Especiais</h2>
-            <!-- Ofertas -->
+            <div class="product-item">
+                <img src="oferta-peca1.jpg" alt="Oferta Peça 1">
+                <h3>Oferta Peça 1</h3>
+                <p>R$ 170,00</p>
+            </div>
+            <div class="product-item">
+                <img src="oferta-peca2.jpg" alt="Oferta Peça 2">
+                <h3>Oferta Peça 2</h3>
+                <p>R$ 130,00</p>
+            </div>
         </section>
     </main>
     <footer>
@@ -57,35 +84,85 @@
     </footer>
 </body>
 </html>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalhes do Produto</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <!-- Cabeçalho como na página inicial -->
-    </header>
-    <main>
-        <section class="product-detail">
-            <div class="product-images">
-                <img src="produto.jpg" alt="Nome do Produto">
-            </div>
-            <div class="product-info">
-                <h1>Nome do Produto</h1>
-                <p>Descrição completa do produto.</p>
-                <p>Preço: R$ 123,45</p>
-                <p>Quantidade:</p>
-                <input type="number" value="1">
-                <button>Adicionar ao Carrinho</button>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <!-- Rodapé como na página inicial -->
-    </footer>
-</body>
-</html>
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.search-bar input {
+    padding: 5px;
+}
+
+.cart a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    padding: 20px;
+}
+
+.product-item {
+    margin-bottom: 20px;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .contact-info p,
+footer .social-media a {
+    margin: 5px 0;
+}
+
+footer .social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
